@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title> Calculator </title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+        }
+        .container {
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(100, 66, 66, 0.1);
+            width: 300px;
+            max-width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 2px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-group:last-of-type {
+            margin-bottom: 0;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1> Calculator </h1>
+        <div>
+            <div class="form-group">
+                <label for="Number1">Number1:</label>
+                <input type="number" id="Number1" name="Number1" required>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="Number2">Number2:</label>
+                <input type="number" id="Number2" name="Number2" required>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="Result">Result:</label>
+                <input type="number" id="Result" name="Result" readonly>
+        </div>
+        <div>
+            <form class="form-group">
+                <input type="button" onclick="add()" value="Add"/>
+                <input type="button" onclick="subtract()" value="Subtract"/>
+                <input type="button" onclick="multiply()" value="Multiply"/>
+                <input type="button" onclick="divide()" value="Divide"/>
+            </form>
+        </div>
+        </div>
+        <script>
+            function add()
+            {e
+                
+                var first=parseInt(document.getElementById('Number1').value);
+                var second=parseInt(document.getElementById('Number2').value);
+                document.getElementById("Result").value=first+second;
+                alert(document.getElementById("Result").value=first+second);
+            }
+            function subtract()
+            {
+                
+                var first=parseInt(document.getElementById('Number1').value);
+                var second=parseInt(document.getElementById('Number2').value);
+                document.getElementById("Result").value=first-second;
+                alert(document.getElementById("Result").value=first-second);
+            }
+            function multiply()
+            {
+                
+                var first=parseInt(document.getElementById('Number1').value);
+                var second=parseInt(document.getElementById('Number2').value);
+                document.getElementById("Result").value=first*second;
+                alert(document.getElementById("Result").value=first*second);
+            }
+            function divide()
+            {
+                
+                var first=parseInt(document.getElementById('Number1').value);
+                var second=parseInt(document.getElementById('Number2').value);
+                document.getElementById("Result").value=first/second;
+                alert( document.getElementById("Result").value=first/second);
+            } 
+            
+
+
+
+
+
+
+
+
+
+            
+        
+            
+        </script>
+    </body>
+</head>
+</html>
